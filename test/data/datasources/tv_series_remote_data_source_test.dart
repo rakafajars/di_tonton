@@ -16,12 +16,12 @@ void main() {
   const API_KEY = 'api_key=2174d146bb9c0eab47529b2e77d6b526';
   const BASE_URL = 'https://api.themoviedb.org/3';
   late TvSeriesRemoteDataSourceImpl dataSource;
-  late MockHttpClient mockHttpClient;
+  late MockIOClient mockHttpClient;
 
   setUp(() {
-    mockHttpClient = MockHttpClient();
+    mockHttpClient = MockIOClient();
     dataSource = TvSeriesRemoteDataSourceImpl(
-      client: mockHttpClient,
+      mockHttpClient,
     );
   });
 

@@ -46,9 +46,10 @@ import 'package:ditonton/presentation/provider/tv_series_list_notifier.dart';
 import 'package:ditonton/presentation/provider/tv_series_search_notifier.dart';
 import 'package:ditonton/presentation/provider/tv_series_watchlist_notifier.dart';
 import 'package:ditonton/presentation/provider/watchlist_movie_notifier.dart';
-import 'package:http/http.dart' as http;
 import 'package:get_it/get_it.dart';
+import 'package:http/io_client.dart';
 
+import 'common/ssl_pinning.dart';
 import 'domain/usecases/tv_series/get_tv_series_detail.dart';
 import 'domain/usecases/tv_series/get_tv_series_recommendation.dart';
 import 'domain/usecases/tv_series/get_tv_series_top_rated.dart';
@@ -57,7 +58,11 @@ import 'domain/usecases/tv_series/search_tv_series.dart';
 
 final locator = GetIt.instance;
 
-void init() {
+void init() async {
+  IOClient ioClient = await SslPinning.ioClient;
+
+  // external i.e. http client
+  locator.registerLazySingleton<IOClient>(() => ioClient);
   // provider
   locator.registerFactory(
     () => MovieListNotifier(
@@ -247,12 +252,12 @@ void init() {
 
   // data sources
   locator.registerLazySingleton<MovieRemoteDataSource>(
-      () => MovieRemoteDataSourceImpl(client: locator()));
+      () => MovieRemoteDataSourceImpl(locator()));
   locator.registerLazySingleton<MovieLocalDataSource>(
       () => MovieLocalDataSourceImpl(databaseHelper: locator()));
   locator.registerLazySingleton<TvSeriesRemoteDataSource>(
     () => TvSeriesRemoteDataSourceImpl(
-      client: locator(),
+      locator(),
     ),
   );
   locator.registerLazySingleton<TvSeriesLocalDataSource>(
@@ -263,7 +268,4 @@ void init() {
 
   // helper
   locator.registerLazySingleton<DatabaseHelper>(() => DatabaseHelper());
-
-  // external
-  locator.registerLazySingleton(() => http.Client());
 }
