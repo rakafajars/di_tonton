@@ -1,23 +1,25 @@
 ## 📸 Example iOS
-<pre>
-![Simulator Screen Shot - iPhone 13 Pro Max - 2022-09-06 at 15 14 58](https://user-images.githubusercontent.com/73903697/188583669-c0140f0d-b48f-44c8-88b9-2d18036c4fc0.png)
-![Simulator Screen Shot - iPhone 13 Pro Max - 2022-09-06 at 15 15 02](https://user-images.githubusercontent.com/73903697/188583820-11838ba2-6c5a-42ce-a2ea-1fc4656e1ab7.png)
-![Simulator Screen Shot - iPhone 13 Pro Max - 2022-09-06 at 15 15 08](https://user-images.githubusercontent.com/73903697/188583898-5682c190-f855-44b5-b772-c1f9a36de1e9.png)
-![Simulator Screen Shot - iPhone 13 Pro Max - 2022-09-06 at 15 15 10](https://user-images.githubusercontent.com/73903697/188583945-2d5e49d6-b084-47a0-8fff-de00c218ca6d.png)
-![Simulator Screen Shot - iPhone 13 Pro Max - 2022-09-06 at 15 15 13](https://user-images.githubusercontent.com/73903697/188583996-c6d203ad-792f-4a97-b6e8-9bb0604883ac.png)
-![Simulator Screen Shot - iPhone 13 Pro Max - 2022-09-06 at 15 15 17](https://user-images.githubusercontent.com/73903697/188584074-19246fc8-31c6-42c9-ab0a-5e6c7ff24ceb.png)
-![Simulator Screen Shot - iPhone 13 Pro Max - 2022-09-06 at 15 15 21](https://user-images.githubusercontent.com/73903697/188584195-394ab002-e303-4790-88e0-900b7ef64b92.png)
-![Simulator Screen Shot - iPhone 13 Pro Max - 2022-09-06 at 15 15 24](https://user-images.githubusercontent.com/73903697/188584210-4bb1740e-02f2-4a48-8eef-36c65b54d1d4.png)
-</pre>
+![WhatsApp Image 2022-09-06 at 3 28 34 PM (1)](https://user-images.githubusercontent.com/73903697/188586452-4486edd9-d4df-4a95-ab57-95134a63d6df.jpeg)
+![WhatsApp Image 2022-09-06 at 3 28 34 PM (2)](https://user-images.githubusercontent.com/73903697/188586472-4615d74c-9394-46de-937f-40af885dbe34.jpeg)
+![WhatsApp Image 2022-09-06 at 3 28 34 PM (3)](https://user-images.githubusercontent.com/73903697/188586475-124f9fbb-64df-435f-9778-ff1bb26b3330.jpeg)
+![WhatsApp Image 2022-09-06 at 3 28 34 PM (4)](https://user-images.githubusercontent.com/73903697/188586481-de615f5e-d923-44c6-8aa3-a58848c63880.jpeg)
+![WhatsApp Image 2022-09-06 at 3 28 34 PM (5)](https://user-images.githubusercontent.com/73903697/188586486-a864772d-52bf-4340-9eef-3f5c02ffff7e.jpeg)
+![WhatsApp Image 2022-09-06 at 3 28 34 PM (6)](https://user-images.githubusercontent.com/73903697/188586493-4d111d49-88fe-42a3-86f5-94bab5338526.jpeg)
+![WhatsApp Image 2022-09-06 at 3 28 34 PM (7)](https://user-images.githubusercontent.com/73903697/188586500-c3c90954-c656-4daa-bff9-a0b69dc062e4.jpeg)
+![WhatsApp Image 2022-09-06 at 3 28 34 PM](https://user-images.githubusercontent.com/73903697/188586508-028b01dd-cdff-4106-ac42-a3c395968d51.jpeg)
+
+
 
 
 ## Built With 🛠
+* [http](https://pub.dev/packages/http) - A type-safe HTTP client.
+* [provider](https://pub.dev/packages/provider) - A wrapper around InheritedWidget to make them easier to use and more reusable.
+* [dartz](https://pub.dev/packages/dartz) - Functional programming in Dart
 * [BLoC Pattern](https://bloclibrary.dev/) - Business logic component to separate the business logic with UI.
 * [Equatable](https://pub.dev/packages/equatable) - Being able to compare objects in `Dart` often involves having to override the `==` operator.
-* [http](https://pub.dev/packages/http) - A type-safe HTTP client.
 * [Codemagic](https://blog.codemagic.io/environments-in-flutter-with-codemagic-cicd/) - Handling DevOps CI/CD for pipeline and automatically build.
-* Handle State - (Loading, No Data, Has Data, No Internet Connection, Request Timeout, Error)
 * [Get It](https://pub.dev/packages/get_it) - A Dependency Injection
+* other
 
 
 [![Codemagic build status](https://api.codemagic.io/apps/6316218e2923d8f4b5a83c20/6316218e2923d8f4b5a83c1f/status_badge.svg)](https://codemagic.io/apps/6316218e2923d8f4b5a83c20/6316218e2923d8f4b5a83c1f/latest_build)
