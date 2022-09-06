@@ -47,8 +47,8 @@ import 'presentation/pages/tv_series_watchlist_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  di.init();
+  // await Firebase.initializeApp();
+  await di.init();
   runApp(MyApp());
 }
 

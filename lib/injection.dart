@@ -58,7 +58,7 @@ import 'domain/usecases/tv_series/search_tv_series.dart';
 
 final locator = GetIt.instance;
 
-void init() async {
+Future<void> init() async {
   IOClient ioClient = await SslPinning.ioClient;
 
   // external i.e. http client
